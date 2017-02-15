@@ -8,8 +8,9 @@ public abstract class EstatCasella {
  * i desmarcades. Aquest mètode a de retornar un objecte de 
  * la classe que representa l’estat inicial de totes les caselles. */
 	public static EstatCasella getEstatInicial() {
-		//PENDENT IMPLEMENTAR
-		return null; //RETORN QUE CAL REVISAR
+		//Implementat
+		
+		return new CasellaTapadaDesmarcada(); 
 	}
 	
 	/** Mètode abstracte que retorna un booleà que serà cert si la 

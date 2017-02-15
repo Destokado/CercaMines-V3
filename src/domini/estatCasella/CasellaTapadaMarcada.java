@@ -12,13 +12,16 @@ public class CasellaTapadaMarcada extends EstatCasella {
 
 	@Override
 	public	boolean getDestapada() {
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
 		return false; //RETORN QUE CAL REVISAR
 	}
 
 	@Override
 	public	void destapar(Casella casella) {
 		//PENDENT IMPLEMENTAR
+		EstatCasella destapada = new CasellaDestapada();
+		casella.setEstat(destapada);
+		casella.set
 	}
 
 	@Override

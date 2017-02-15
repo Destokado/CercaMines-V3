@@ -26,14 +26,15 @@ public abstract class Casella {
 	
 	//Retorna el contingut de la casella
 	public int getContingut() {
-		//PENDENT IMPLEMENTAR
-		return -5000; //RETURN QUE CAL REVISAR
+		//Implementat
+		return  this.contingut; 
 	}
 
 	//Retrona cert si la casella està destapada, fals altrament
 	public boolean estaDestapada() {
 		//PENDENT IMPLEMENTAR
-		return true; //RETURN QUE CAL REVISAR
+		if (this.estat==CasellaDestapada.getDestapada())
+		return false; //RETURN QUE CAL REVISAR
 	}
 
 	//Destapa la casella
@@ -48,14 +49,14 @@ public abstract class Casella {
 	
 	//Retorna si la casella està o no marcada
 	public boolean estaMarcadaPosibleMina() {
-		//PENDENT IMPLEMENTAR
-		return false; //RETORN QUE CAL REVISAR
+		//IMPLEMENTAT
+		return estat.getMarcadaPossibleMina(); 
 	}
 	
 	//Retorna les coordenades de la casella
 	public Coordenada getPosicio() {
-		//PENDENT IMPLEMENTAR
-		return null; //RETURN QUE CAL REVISAR
+		//IMPLEMENTAT
+		return this.posicio; 
 	}
 
 	/*Retorna cert si la casella no té cap vei amb mina 
