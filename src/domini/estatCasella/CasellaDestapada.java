@@ -18,24 +18,26 @@ public class CasellaDestapada extends EstatCasella {
 
 	@Override
 	public boolean getDestapada() {
-		//PENDENT IMPLEMENTAR
-		return true; //RETORN QUE CAL REVISAR
+		//IMPLEMENTAT
+		return true; 
 	}
 
 	@Override
 	public void destapar(Casella casella) {
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
 		
 		//NO CAL FER RES
 	}
 
 	@Override
 	public	void marcarPossibleMina(Casella casella) {
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
+		//NO CAL FER RES
 	}
 
 	@Override
 	public	void desmarcarPossibleMina(Casella casella) {
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
+		//NO CAL FER RES
 	}
 }
