@@ -1,5 +1,6 @@
 package domini;
 
+import domini.estatCasella.CasellaTapadaMarcada;
 import domini.estatCasella.EstatCasella;
 import domini.tipusCasella.CasellaAmbMina;
 import domini.tipusCasella.CasellaSenseMina;
@@ -19,6 +20,10 @@ public abstract class Casella {
 
 	public Casella(Coordenada coordenada) {
 		//PENDENT IMPLEMENTAR
+		contingut = 0;
+		posicio = coordenada;
+		estat= EstatCasella.getEstatInicial();
+		
 	}	
 	
 	//Retorna cert si la casella té una mina, i fals altrament
@@ -33,7 +38,7 @@ public abstract class Casella {
 	//Retrona cert si la casella està destapada, fals altrament
 	public boolean estaDestapada() {
 		//PENDENT IMPLEMENTAR
-		if (this.estat==CasellaDestapada.getDestapada())
+		
 		return false; //RETURN QUE CAL REVISAR
 	}
 
@@ -65,7 +70,8 @@ public abstract class Casella {
 	
 	/*Actualitzar l'estat de la casella*/
 	public void setEstat (EstatCasella nouEstat) {
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
+		estat= nouEstat;
 	}
 	
 	/* Si la casella és de tipus CasellaSenseMina, aquest mètode creara 

@@ -2,6 +2,7 @@ package domini.tipusCasella;
 
 import domini.Casella;
 import domini.Coordenada;
+import domini.estatCasella.EstatCasella;
 
 public class CasellaSenseMina extends Casella {
 	
@@ -11,25 +12,31 @@ public class CasellaSenseMina extends Casella {
 	/** Al construir un objecte d'aquesta classe, cal inicialitzar 
 	 * degudament els atributs heretats */
 	public CasellaSenseMina(Coordenada coordenada) {
-		super (null); //CAL REVISAR
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
+		super(coordenada); 
+		
 	}
 
 	//incrementa amb 1 el número de mines a prop
 	protected void modificarVeiAmbMina() {		
 		//PENDENT IMPLEMENTAR
+		
+		//IMPLEMENTAT?
+		
+		contingut++;
 	}
 
 	@Override
 	public boolean hiHaMina() {	
-		//PENDENT IMPLEMENTAR
-		return false;//RETURN QUE CAL REVISAR
+		//IMPLEMENTAT
+		//NO CAL FER RES
+		return false;
 	}
 
 	@Override
 	public boolean esBuida() {
-		//PENDENT IMPLEMENTAR
-		return false;//RETURN QUE CAL REVISAR
+		//IMPLEMENTAT
+		return (contingut!= POS_BUIDA);
 	}
 
 	@Override

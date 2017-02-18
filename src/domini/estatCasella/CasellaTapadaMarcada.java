@@ -13,7 +13,7 @@ public class CasellaTapadaMarcada extends EstatCasella {
 	@Override
 	public	boolean getDestapada() {
 		//IMPLEMENTAT
-		return false; //RETORN QUE CAL REVISAR
+		return false; 
 	}
 
 	@Override
@@ -21,16 +21,19 @@ public class CasellaTapadaMarcada extends EstatCasella {
 		//PENDENT IMPLEMENTAR
 		EstatCasella destapada = new CasellaDestapada();
 		casella.setEstat(destapada);
-		casella.set
+		
 	}
 
 	@Override
 	public	void marcarPossibleMina(Casella casella) {
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
+		//NO CAL FER RES
 	}
 
 	@Override
 	public	void desmarcarPossibleMina(Casella casella) {
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
+		EstatCasella tapadaDesmarcada = new CasellaTapadaDesmarcada();
+		casella.setEstat(tapadaDesmarcada);
 	}
 }

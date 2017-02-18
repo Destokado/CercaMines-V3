@@ -6,19 +6,22 @@ public class CasellaTapadaDesmarcada extends EstatCasella {
 
 	@Override
 	public	boolean getMarcadaPossibleMina() {
-		//PENDENT IMPLEMENTAR
-		return false; //RETORN QUE CAL REVISAR
+		//IMPLEMENTAT
+		//NO CAL FER RES
+		return false; 
 	}
 
 	@Override
 	public	boolean getDestapada() {
-		//PENDENT IMPLEMENTAR
-		return false; //RETORN QUE CAL REVISAR
+		//IMPLEMENTAT
+		//NO CLA FER RES
+		return false; 
 	}
 
 	@Override
 	public	void destapar(Casella casella) {
 		//PENDENT IMPLEMENTAR
+		casella = new CasellaDestapada();
 	}
 
 	@Override
@@ -28,6 +31,7 @@ public class CasellaTapadaDesmarcada extends EstatCasella {
 
 	@Override
 	public	void desmarcarPossibleMina(Casella casella) {
-		//PENDENT IMPLEMENTAR
+		//IMPLEMENTAT
+		//NO CAL FER RES
 	}
 }
